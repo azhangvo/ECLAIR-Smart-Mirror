@@ -9,7 +9,6 @@
 #include <string>
 using namespace std;
 
-
 /*
     In this function, a new thread is created to create a HTTP request to a given url.
     After the asynchronous call is made, a json storage value is populated with the
@@ -25,8 +24,10 @@ using namespace std;
         get_http_request(&finished, "http://date.jsontest.com", &data);
 
 */
-void get_http_request(bool* finished, const string url, Json::Value* storage);
+void get_http_request(bool *finished, const string url, Json::Value *storage);
 
 void draw_loading_wheel(uint32_t r1, uint32_t r2, uint32_t x, uint32_t y);
+
+void draw_button(uint32_t x, uint32_t y, uint32_t width, uint32_t height, string text);
 
 #endif
